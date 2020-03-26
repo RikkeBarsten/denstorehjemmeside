@@ -7,11 +7,43 @@
     <title>den store hjemmeside</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
+    <!--
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
+        -->
     
 </head>
 <body>
+    <div>
+        <p>torsdag 26 marts</p>
+        <p>i dag har vi laved en  ganggge mmaskine</p>
+        
+            <input type="text" name="tal1">
+            <input type="text" name="tal2">
+            <input type="button" value="Eskil og Gisles knap" onclick="gang()">
+        
+        <p id="gissssssle">Her kommer svaret...</p>
+        
+        <script type="text/javascript">
+          
+
+            function gang(){
+                console.log("Du har trykket på Eskil og Gisles knap");
+                
+                var tal1 = document.getElementsByName("tal1")[0].value;
+                var tal2 = document.getElementsByName("tal2")[0].value;
+                
+                
+                
+                var svar = document.getElementById("gissssssle");
+                var resultat = tal1 * tal2;
+                svar.innerText = resultat;
+                
+            }
+        
+        </script>
+        
+    </div>
     <div>
         <p>onsdag 18 mars</p>
         <p>vi har lert om fugle og hængt en fuglekasse op.</p>
